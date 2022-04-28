@@ -161,13 +161,14 @@ APIs must only be added to this section when the API is publicly available in at
 ``` yaml $(tag) == 'package-composite-v5'
 input-file:
 - Microsoft.Sql/stable/2014-04-01-legacy/backups_legacy.json
+- Microsoft.Sql/stable/2014-04-01-legacy/sql.core_legacy.json
+- Microsoft.Sql/stable/2014-04-01-legacy/usages_legacy.json
 - Microsoft.Sql/stable/2014-04-01/dataMasking.json
 - Microsoft.Sql/stable/2014-04-01/geoBackupPolicies.json
 - Microsoft.Sql/stable/2014-04-01/metrics.json
 - Microsoft.Sql/stable/2014-04-01/serverCommunicationLinks.json
 - Microsoft.Sql/stable/2014-04-01/serviceObjectives.json
-- Microsoft.Sql/stable/2014-04-01-legacy/sql.core_legacy.json
-- Microsoft.Sql/stable/2014-04-01-legacy/usages_legacy.json
+- ./Microsoft.Sql/preview/2020-11-01-preview/DataWarehouseUserActivities.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseAdvisors.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseAutomaticTuning.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseColumns.json
@@ -176,9 +177,8 @@ input-file:
 - ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseSecurityAlertPolicies.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseTables.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseVulnerabilityAssesmentRuleBaselines.json
-- ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseVulnerabilityAssessments.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseVulnerabilityAssessmentScans.json
-- ./Microsoft.Sql/preview/2020-11-01-preview/DataWarehouseUserActivities.json
+- ./Microsoft.Sql/preview/2020-11-01-preview/DatabaseVulnerabilityAssessments.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/DeletedServers.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ElasticPoolOperations.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/EncryptionProtectors.json
@@ -189,12 +189,12 @@ input-file:
 - ./Microsoft.Sql/preview/2020-11-01-preview/JobAgents.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/JobCredentials.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/JobExecutions.json
-- ./Microsoft.Sql/preview/2020-11-01-preview/Jobs.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/JobStepExecutions.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/JobSteps.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/JobTargetExecutions.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/JobTargetGroups.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/JobVersions.json
+- ./Microsoft.Sql/preview/2020-11-01-preview/Jobs.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/LocationCapabilities.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/LongTermRetentionPolicies.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/MaintenanceWindowOptions.json
@@ -203,15 +203,16 @@ input-file:
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseColumns.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseQueries.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseRestoreDetails.json
-- ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabases.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseSchemas.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseSecurityAlertPolicies.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseSecurityEvents.json
+- ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseSensitivityLabels.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseTables.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseTransparentDataEncryption.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseVulnerabilityAssessmentRuleBaselines.json
-- ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseVulnerabilityAssessments.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseVulnerabilityAssessmentScans.json
+- ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseVulnerabilityAssessments.json
+- ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabases.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedInstanceAdministrators.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedInstanceAzureADOnlyAuthentications.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ManagedInstanceEncryptionProtectors.json
@@ -229,6 +230,7 @@ input-file:
 - ./Microsoft.Sql/preview/2020-11-01-preview/PrivateLinkResources.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/RecoverableManagedDatabases.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/RestorePoints.json
+- ./Microsoft.Sql/preview/2020-11-01-preview/SensitivityLabels.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ServerAdvisors.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ServerAutomaticTuning.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/ServerAzureADAdministrators.json
@@ -251,14 +253,15 @@ input-file:
 - ./Microsoft.Sql/preview/2020-11-01-preview/VirtualNetworkRules.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/WorkloadClassifiers.json
 - ./Microsoft.Sql/preview/2020-11-01-preview/WorkloadGroups.json
-- ./Microsoft.Sql/preview/2021-02-01-preview/TransparentDataEncryptions.json
 - ./Microsoft.Sql/preview/2021-02-01-preview/BackupShortTermRetentionPolicies.json
 - ./Microsoft.Sql/preview/2021-02-01-preview/DatabaseExtensions.json
 - ./Microsoft.Sql/preview/2021-02-01-preview/DatabaseOperations.json
 - ./Microsoft.Sql/preview/2021-02-01-preview/DatabaseUsages.json
 - ./Microsoft.Sql/preview/2021-02-01-preview/LedgerDigestUploads.json
 - ./Microsoft.Sql/preview/2021-02-01-preview/OutboundFirewallRules.json
+- ./Microsoft.Sql/preview/2021-02-01-preview/ReplicationLinks.json
 - ./Microsoft.Sql/preview/2021-02-01-preview/Servers.json
+- ./Microsoft.Sql/preview/2021-02-01-preview/TransparentDataEncryptions.json
 - ./Microsoft.Sql/preview/2021-02-01-preview/Usages.json
 - ./Microsoft.Sql/preview/2021-05-01-preview/Databases.json
 - ./Microsoft.Sql/preview/2021-05-01-preview/LongTermRetentionBackups.json
@@ -267,15 +270,12 @@ input-file:
 - ./Microsoft.Sql/preview/2021-05-01-preview/RestorableDroppedDatabases.json
 - ./Microsoft.Sql/preview/2021-05-01-preview/RestorableDroppedManagedDatabases.json
 - ./Microsoft.Sql/preview/2021-05-01-preview/ServerConnectionPolicies.json
-- ./Microsoft.Sql/preview/2021-11-01-preview/DistributedAvailabilityGroups.json
-- ./Microsoft.Sql/preview/2021-11-01-preview/ServerTrustCertificates.json
 - ./Microsoft.Sql/preview/2021-08-01-preview/ElasticPools.json
-- ./Microsoft.Sql/preview/2021-11-01-preview/IPv6FirewallRules.json
-- ./Microsoft.Sql/preview/2021-11-01-preview/EndpointCertificates.json
-- ./Microsoft.Sql/preview/2021-02-01-preview/ReplicationLinks.json
-- ./Microsoft.Sql/preview/2020-11-01-preview/ManagedDatabaseSensitivityLabels.json
-- ./Microsoft.Sql/preview/2020-11-01-preview/SensitivityLabels.json
 - ./Microsoft.Sql/preview/2021-11-01-preview/BlobAuditing.json
+- ./Microsoft.Sql/preview/2021-11-01-preview/DistributedAvailabilityGroups.json
+- ./Microsoft.Sql/preview/2021-11-01-preview/EndpointCertificates.json
+- ./Microsoft.Sql/preview/2021-11-01-preview/IPv6FirewallRules.json
+- ./Microsoft.Sql/preview/2021-11-01-preview/ServerTrustCertificates.json
 
 # Needed when there is more than one input file
 override-info:
